@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false
+            }
+        ]
+    ],
+    "plugins": [
+        "es6-promise",
+        "transform-function-bind",
+        "external-helpers",
+        "transform-object-rest-spread", ["transform-react-jsx",
+        {
+            "pragma": "Virtual.createElement" // default pragma is React.createElement
+        }]
+    ]
+}

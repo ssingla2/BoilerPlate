@@ -1,0 +1,14 @@
+Date : 09/08/2017
+
+- Added support for <LazilyLoadWithLoader />. Use it for lazlily loading non-route dependencies
+- Route based dependencies should still remain in routeConfig.
+
+
+Date : 31/07/2017
+Commit id : 740690d36256a3072d2b141d816e34b765f5cdb6
+
+[Breaking]
+
+- Added support for <LazilyLoad /> and <UpdateStoreAndStyles />
+- Dependecies can no more be mentioned in render in routeConfig.js.
+- Documentation https://gitlab.infoedge.com/static5/100/blob/master/src/app/routeUtil/LazyilyLoad.md

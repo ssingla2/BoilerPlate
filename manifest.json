@@ -1,0 +1,11 @@
+{
+  "name": "Escala boilerplate",
+  "short_name": "Naukri",
+  "start_url": "/?lnch=1",
+  "description": "boilerplate for escala",
+  "icons": [],
+  "background_color": "white",
+  "display": "standalone",  
+  "orientation": "portrait",
+  "theme_color": "white"
+}

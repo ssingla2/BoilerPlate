@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="//localhost:3000" />
+    <meta name="google" content="notranslate">
+    <!-- manifest file -->
+    <link rel="manifest" href="./manifest.json">
+    <link type="text/css" href="./c/common.css" rel="stylesheet">
+    <title>Escala Boilerplate</title>
+    <script>
+        window.ipAddress = "localhost:3000";
+        window.DEBUG = true;
+        window.process = undefined;
+        window.appId = 100;
+        window.testEnv = true;
+    </script>
+    <style type="text/css">
+        /* Kindly remove this style. */
+        body {
+            padding: 10px;
+        }
+        .welcome-msg {
+            color: darkblue;
+            font-size: 20px;
+        }
+        .coding-msg {
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="welcome-msg">Welcome to Escala!</p>
+    
+    <div id="root">
+    </div>
+
+    <p class="coding-msg">Happy Coding :)</p>
+
+    <script>
+    //hack of IE and safari bug : Super expression must either be null or a function, not undefined
+    if (typeof HTMLElement !== 'function') {
+        var _HTMLElement = function() {};
+        _HTMLElement.prototype = HTMLElement.prototype;
+        HTMLElement = _HTMLElement;
+    }
+
+    // Download customElement pollyfill if browser not supported
+    if (!('registerElement' in document)) {
+        document.write(decodeURI("%3Cscript src='https://static.naukimg.com/s/0/0/j/customElements.min.js' type='text/javascript' %3E%3C/script%3E"));
+    }
+    </script>
+    <script type="text/javascript" src="./j/external.js" defer></script>
+    <script type="text/javascript" src="./j/internal.js" defer></script>
+    <script type="text/javascript" src="./j/require.js" defer></script>
+    <script type="text/javascript" src="./j/app.js" defer></script>
+</body>
+
+</html>
